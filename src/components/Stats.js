@@ -18,7 +18,7 @@ export default function Stats() {
             <Opponents />
           </div>
         </div>
-        <div class=" px-3 py-2  w-11/12  ">
+        <div class=" px-3 mb-24 md:mb-10 py-2  w-11/12  ">
           <div class="bg-gray-300 h-auto shadow-lg  text-center">
             <Grounds />
           </div>
