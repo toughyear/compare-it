@@ -51,52 +51,79 @@ import "echarts/lib/component/title";
 
 export default function Wins() {
   return (
-    <ReactEchartsCore
-      echarts={echarts}
-      option={{
-        tooltip: {
-          trigger: "item",
-          formatter: "{a} <br/>{b}: {c} ({d}%)"
-        },
-        legend: {
-          orient: "vertical",
-          left: 10,
-          data: ["delhi", "mumbai", "kolkata", "sydney", "newyork"]
-        },
-        series: [
-          {
-            name: "wut",
-            type: "pie",
-            radius: ["30%", "70%"],
-            avoidLabelOverlap: false,
-            label: {
-              normal: {
-                show: false,
-                position: "center"
-              },
-              emphasis: {
-                show: true,
-                textStyle: {
-                  fontSize: "30",
-                  fontWeight: "bold"
+    <div>
+      {" "}
+      <ReactEchartsCore
+        echarts={echarts}
+        option={{
+          backgroundColor: "#E2E8F0",
+
+          textStyle: {
+            fontFamily: "Poppins"
+          },
+          title: {
+            text: "Win % in ODI",
+            left: "center",
+            top: 20,
+            textStyle: {
+              color: "#232323"
+            }
+          },
+
+          label: {
+            color: "#232323"
+          },
+          tooltip: {
+            trigger: "item",
+            formatter: "{a} <br/>{b}: {c} ({d}%)"
+          },
+          series: [
+            {
+              name: "Total Matches",
+              type: "pie",
+              radius: ["30%", "50%"],
+              avoidLabelOverlap: false,
+              label: {
+                normal: {
+                  show: true,
+                  position: "center"
+                },
+                emphasis: {
+                  show: true,
+                  textStyle: {
+                    fontSize: "30",
+                    fontWeight: "bold"
+                  }
                 }
+              },
+              label: {
+                color: "#232323"
+              },
+              labelLine: {
+                lineStyle: {
+                  color: "#232323"
+                },
+                smooth: 0.2,
+                length: 10,
+                length2: 20
+              },
+              data: [
+                { value: 234, name: "Won" },
+                { value: 200, name: "Lost" },
+                { value: 5, name: "Tie" }
+              ].sort(function(a, b) {
+                return a.value - b.value;
+              }),
+              animationType: "scale",
+              animationEasing: "elasticOut",
+              animationDelay: function(idx) {
+                return Math.random() * 200;
               }
-            },
-            labelLine: {
-              normal: {
-                show: false
-              }
-            },
-            data: [
-              { value: 335, name: "gg" },
-              { value: 310, name: "ss" },
-              { value: 234, name: "xx" },
-              { value: 135, name: "qq" },
-              { value: 1548, name: "aa" }
-            ]
-          }
-        ]
-      }}
-    />
+            }
+          ]
+        }}
+      />
+      <h1 className="text-gray-800 font-bold text-xl pb-8 ">53.3% Win rate!</h1>
+    </div>
   );
 }
