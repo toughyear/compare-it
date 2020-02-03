@@ -32,27 +32,27 @@ export default function Sidebar() {
           </Link>
         </li>
         <li className="mr-3 flex-1">
-          <Link to="/byground">
-            <a
-              href="#"
-              class="block py-1 md:py-3 pl-1 align-middle text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500 md:focus:text-pink-500 md:focus:border-pink-500"
-            >
-              <i class="fas fa-globe pr-0 md:pr-3"></i>
-              <span class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block">
-                By Ground
-              </span>
-            </a>
-          </Link>
-        </li>
-        <li className="mr-3 flex-1">
-          <Link to="/byopposition">
+          <Link to="/stats">
             <a
               href="#"
               class="block py-1 md:py-3 pl-1 align-middle text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500 md:focus:text-pink-500 md:focus:border-pink-500"
             >
               <i class="fas fa-trophy pr-0 md:pr-3"></i>
               <span class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block">
-                Opponent
+                Stats
+              </span>
+            </a>
+          </Link>
+        </li>
+        <li className="mr-3 flex-1">
+          <Link to="/timeline">
+            <a
+              href="#"
+              class="block py-1 md:py-3 pl-1 align-middle text-gray-800 no-underline hover:text-pink-500 border-b-2 border-gray-800 md:border-gray-900 hover:border-pink-500 md:focus:text-pink-500 md:focus:border-pink-500"
+            >
+              <i class="fas fa-chart-line pr-0 md:pr-3"></i>
+              <span class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block">
+                Timeline
               </span>
             </a>
           </Link>
