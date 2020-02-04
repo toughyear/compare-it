@@ -1,10 +1,5 @@
-import React, { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Redirect
-} from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Summary from "./components/Summary";
 import Stats from "./components/Stats";
 import Timeline from "./components/Timeline";

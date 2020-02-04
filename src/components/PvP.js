@@ -18,6 +18,7 @@ export default function PvP() {
             <a
               href="https://github.com/toughyear/compare-it"
               target="_blank"
+              rel="noopener noreferrer"
               class=" md:flex py-1 md:py-3 pl-1 align-middle text-3xl no-underline "
             >
               <i class="fab fa-github pr-0 md:pr-3"></i>
@@ -32,6 +33,7 @@ export default function PvP() {
             <a
               href="https://toughyear.github.io/portfolio/"
               target="_blank"
+              rel="noopener noreferrer"
               class=" md:flex py-1 md:py-3 pl-1 align-middle text-3xl no-underline "
             >
               <i class="fa fa-meteor pr-0 md:pr-3"></i>
