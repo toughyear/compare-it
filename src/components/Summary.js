@@ -4,7 +4,7 @@ import Runs from "./charts/Runs";
 import Wins from "./charts/Wins";
 export default function Summary() {
   return (
-    <div className=" h-screen bg-blue-100 ">
+    <div className=" h-full bg-blue-100 ">
       <h1 className="text-gray-800 text-4xl  md:text-6xl pt-5 text-center font-bold ">
         Summary
       </h1>
