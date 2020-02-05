@@ -10,14 +10,14 @@ View this project live on [Netlify](https://compare-it.netlify.com/)
 
 ### Stacks Used:
 
-####1. React.JS
+#### 1. React.JS
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 The project is completely modular with each component having its own .js file.
 
-####2. echarts-for-react
+#### 2. echarts-for-react
 This project uses [echarts-for-react](https://www.npmjs.com/package/echarts-for-react) to make interactive visualization components for dashboard to represent the career data in a easy to understand formats like pie-chart, bar-graph and line-graphs.
 
-####3. TailwindCSS
+#### 3. TailwindCSS
 This Project uses [Tailwind CSS](https://tailwindcss.com/) which is a highly customizable, unopinionated low-level CSS framework.
 
 ## Calculating Page load time
